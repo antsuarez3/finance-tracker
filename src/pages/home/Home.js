@@ -1,5 +1,5 @@
 // styles
-import styles from './Home.module.css'
+// import styles from './Home.module.css'
 
 import React from 'react'
 
