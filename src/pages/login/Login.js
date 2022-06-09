@@ -1,6 +1,6 @@
+import React from 'react'
 import { useState } from 'react'
 import { useLogin } from '../../hooks/useLogin'
-import React from 'react'
 
 // styles
 import styles from './Login.module.css'

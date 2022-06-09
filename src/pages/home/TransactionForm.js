@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { useState, useEffect } from 'react'
 import { useFirestore } from '../../hooks/useFirestore'
 
@@ -10,8 +10,8 @@ export default function TransactionForm({ uid }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     addDocument({
-      uid, 
-      name, 
+      uid,
+      name,
       amount,
     })
   }
@@ -30,20 +30,20 @@ export default function TransactionForm({ uid }) {
       <form onSubmit={handleSubmit}>
         <label>
           <span>Transaction name:</span>
-          <input 
-            type="text"
+          <input
+            type='text'
             required
-            onChange={(e) => setName(e.target.value)} 
-            value={name} 
+            onChange={(e) => setName(e.target.value)}
+            value={name}
           />
         </label>
         <label>
           <span>Amount ($):</span>
           <input
-            type="number"
+            type='number'
             required
-            onChange={(e) => setAmount(e.target.value)} 
-            value={amount} 
+            onChange={(e) => setAmount(e.target.value)}
+            value={amount}
           />
         </label>
         <button>Add Transaction</button>

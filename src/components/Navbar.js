@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
+import { useLogout } from '../hooks/useLogout'
 
-// Styles
+// styles
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
 
         {user && (
           <>
-            <li>hello: {user.displayName}</li>
+            <li>hello, {user.displayName}</li>
             <li>
               <button className='btn' onClick={logout}>
                 Logout
